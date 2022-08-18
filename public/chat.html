@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>PDRoom</title>
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1>PDRoom <i class="fas fa-comments"></i></h1>
+      <a href="index.html" class="btn"><i class="fas fa-arrow-right"></i></a>
+    </header>
+    <main class="chat-main">
+      <div class="chat-sidebar">
+        <h4>Room Name: <span id="room-name"></span></h4>
+        <!--<h4>Room Name:</h4>
+        <h2 id="room-name"></h2>-->
+        <h4><i class="fas fa-users"></i>&nbsp; Users</h4>
+        <ul id="users">
+        </ul>
+      </div>
+      <div class="chat-messages">
+					
+					
+      </div>
+    </main>
+    <div class="chat-form-container">
+      <form id="chat-form">
+        <input
+          id="msg"
+          type="text"
+          placeholder="Enter Message"
+          required
+          autocomplete="off"
+        />
+        <button class="btn"><i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.6/qs.min.js"
+    integrity="sha512-3TmPrquYLaAsUmZKXRARTDC5siWhLAdBVqNo4dWpDABBtLU62AaoTaQJEvjxjExcZYurO6i1dnK85k8pPIBlRg=="
+    crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
